@@ -1,0 +1,42 @@
+Crowds Notes
+
+1. There are currently no crowd-specific rendering optimizations in the engine. Each member of the crowd has a unique AnimTree and skeletal mesh instance.
+
+2.Crowds does not collid with level Geomatry so we better set the path they use to never go throw a wall .
+
+3.We can place our spawning point at anyplace we want and make it possible that the user can't see them coming into the game 
+
+4.We can Spawn Multiple types of agents and change frequencies so we add more or less of one Agent (According to 3D models created by our team and it's Static mesh and animation set"
+
+5.Spawning notes: 
+	-SpawnRate: How many agents per second will be spawned at the target 	actor(s).
+	-SpawnNum: The maximum number of agents alive at one time. If agents are destroyed, more will spawn to meet this number.
+	-SpawnRadius - Radius around target actor(s) to spawn agents.
+ 	-bOnlySpawnHidden: If true, only spawn agents if player can't see spawn 	point.
+	-AgentWarmupTime: Average time to "warm up" spawned agents before letting them sleep if not rendered.
+	-bRespawnDeadAgents: If true, agents that are totally removed (ie blown up) are respawned.
+	-SplitScreenNumReduction - How much to reduce number by in splitscreen.
+	-bCycleSpawnLocs: If true, the spawner will cycle through the spawn locations instead of spawning from a randomly chosen one.
+	-bWarmupPosition: If true, agent will try to find an starting position 	at a random spot between the initial spawn position and its initial destination that isn't in the player's line of sight. 
+
+6. Graphics and animation 
+	I can add 3D models but saddly not the animation this is the information needed to add an animation tree and should be done by the one who do animation 
+ The following properties have an effect on agent animation only if root motion velocity (bUseRootMotionVelocity, described below) is not being used and the agent's AnimTree has a SpeedBlendNode.
+    SpeedBlendStart - Below this speed, the walking animation is used.
+    SpeedBlendEnd - Above this speed, the running animation is used. Between this and SpeedBlendStart the animations are blended.
+    AnimVelRate - This controls how the animation playback rate changes based on the speed of the agent.
+    MaxSpeedBlendChangeSpeed - Limits how quickly blending between running and walking can happen.
+    MoveSyncGroupName - Name of sync group for movement, whose rate is scaled. 
+see picture(1) for an example 
+
+7. Their is opition to make the moition more realistic like slow down when agent take a sharp turn.
+
+
+PS. Their is somestaff i didn't cover but we can make a good crowd system by what i learn even so i will keep working to know everything 
+on the Crowds so you name it and i make it :D 
+
+staff yet to cover 
+RunFromPanic 
+WaitInQueue 
+WaitForGroup 
+
