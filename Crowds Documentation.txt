@@ -1,0 +1,29 @@
+Crowds System Creation steps: 
+1. Creating packages and assets for crowd system 
+2. Prepare the game map for crowds 
+3. Use Kismit to Spawn the crowds and add it's properties 
+
+-------------------------------------------------------------------------------------------------------------------------
+#Creating packages and assets for crowd system 
+------------------------------------------------
+1. Create Archtypes and add it to a package, groud and give it a name.
+2. Create Archtypes list add it to a package to hold many Archtype
+
+
+#Prepare the game map for crowds 
+---------------------------------
+-Make path that this crowds going to take and then add a navigation mesh and polyns so that that
+the crowds dodge obsticaols
+
+
+
+#Use Kismit to Spawn the crowds and add it's properties 
+--------------------------------------------------------
+-Start to use Kismit to Spawn the Agents to the game and give them some properties (can use archtypes only to do this but
+it will limit the possiblities 
+
+
+PS. This is a general overview off how crowds should be design and this is my resources 
+3D Buzz
+https://udn.epicgames.com/Three/CrowdSystem.html
+DigitalTutor 
